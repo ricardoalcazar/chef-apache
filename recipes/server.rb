@@ -7,7 +7,6 @@ file '/var/www/html/index.html' do
 end
 
 service 'httpd' do
-  action :enable
-  action :start
+  action [:enable,:start]
 
 end
